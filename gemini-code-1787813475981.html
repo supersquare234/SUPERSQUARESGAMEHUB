@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Arcade</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>🎮 Web Arcade</h1>
+        <p>Select a game from the menu below to start playing.</p>
+    </header>
+
+    <div class="container">
+        <aside class="sidebar">
+            <h2>Game Library</h2>
+            <div class="game-list">
+                <button class="game-btn" data-url="https://html5.gamedistribution.com/f95180ce27d84f88ac168ad0fb1be750/" class="active">2048</button>
+                <button class="game-btn" data-url="https://html5.gamedistribution.com/c1450280eb4c4e7fb63eb8754b5dfd47/">Tetris Clone</button>
+                <button class="game-btn" data-url="https://html5.gamedistribution.com/2372230198bb4b9e9d6d1d4d8a571fde/">Snake</button>
+            </div>
+        </aside>
+
+        <main class="game-area">
+            <div class="iframe-container">
+                <iframe id="game-frame" src="about:blank" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
